@@ -1,4 +1,4 @@
-# data-structures-and-algorithms
+# Data Structures and Algorithms
 
 Repository for daily java-401d1 code challenges
 
