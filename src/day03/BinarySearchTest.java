@@ -12,9 +12,7 @@ class BinarySearchTest {
     void emptyArray() {
         int[] arr = new int[]{};
         int key = 15;
-        int low = 0;
-        int high = arr.length - 1;
-        int result = BinarySearch.BinarySearch(arr, key, low, high);
+        int result = BinarySearch.BinarySearch(arr, key);
 
         int expected = -1;
         assertEquals(expected, result);
@@ -24,9 +22,7 @@ class BinarySearchTest {
     void sampleArray1() {
         int[] arr = new int[]{4, 8, 15, 16, 23, 42};
         int key = 15;
-        int low = 0;
-        int high = arr.length - 1;
-        int result = BinarySearch.BinarySearch(arr, key, low, high);
+        int result = BinarySearch.BinarySearch(arr, key);
 
         int expected = 2;
         assertEquals(expected, result);
@@ -36,9 +32,7 @@ class BinarySearchTest {
     void sampleArray2() {
         int[] arr = new int[]{11, 22, 33, 44, 55, 66, 77};
         int key = 90;
-        int low = 0;
-        int high = arr.length - 1;
-        int result = BinarySearch.BinarySearch(arr, key, low, high);
+        int result = BinarySearch.BinarySearch(arr, key);
 
         int expected = -1;
         assertEquals(expected, result);
@@ -52,9 +46,7 @@ class BinarySearchTest {
         }
         System.out.print(Arrays.toString(arr));
         int key = 47;
-        int low = 0;
-        int high = arr.length - 1;
-        int result = BinarySearch.BinarySearch(arr, key, low, high);
+        int result = BinarySearch.BinarySearch(arr, key);
 
         int expected = 47;
         assertEquals(expected, result);
@@ -68,9 +60,7 @@ class BinarySearchTest {
         }
         System.out.print(Arrays.toString(arr));
         int key = 47;
-        int low = 0;
-        int high = arr.length - 1;
-        int result = BinarySearch.BinarySearch(arr, key, low, high);
+        int result = BinarySearch.BinarySearch(arr, key);
 
         int expected = -1;
         assertEquals(expected, result);
@@ -84,9 +74,7 @@ class BinarySearchTest {
         }
         System.out.print(Arrays.toString(arr));
         int key = 7500;
-        int low = 0;
-        int high = arr.length - 1;
-        int result = BinarySearch.BinarySearch(arr, key, low, high);
+        int result = BinarySearch.BinarySearch(arr, key);
 
         int expected = 1500;
         assertEquals(expected, result);
@@ -100,9 +88,7 @@ class BinarySearchTest {
         }
         System.out.print(Arrays.toString(arr));
         int key = 90846;
-        int low = 0;
-        int high = arr.length - 1;
-        int result = BinarySearch.BinarySearch(arr, key, low, high);
+        int result = BinarySearch.BinarySearch(arr, key);
 
         int expected = 2163;
         assertEquals(expected, result);
