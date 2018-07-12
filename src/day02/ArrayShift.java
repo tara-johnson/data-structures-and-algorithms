@@ -24,8 +24,8 @@ public class ArrayShift {
             }
         }
 
-        int[] secondArr = new int[tempA + tempB];
-        System.out.print(Arrays.toString(secondArr));
+//        int[] secondArr = new int[tempA + tempB];
+//        System.out.print(Arrays.toString(secondArr));
 
         System.out.println(Arrays.toString(tempA));
         System.out.println(newVal);
