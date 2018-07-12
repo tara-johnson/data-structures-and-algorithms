@@ -2,7 +2,9 @@ package day03;
 
 public class BinarySearch {
 
-    public static int BinarySearch(int[] arr, int key, int low, int high) {
+    public static int BinarySearch(int[] arr, int key) {
+        int low = 0;
+        int high = arr.length - 1;
 
         while (low <= high) {
             int middle = (low + high) / 2;
