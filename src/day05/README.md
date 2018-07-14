@@ -2,9 +2,9 @@
 Rotate a 3x3 matrix (an array of integers), by 90 degrees clockwise.
 
 ## Challenge
-Write a function to rotate a 3x3 matrix (an array of integers), by 90 degrees clockwise. Return
+Write a function to rotate a 3x3 matrix (an array of integers), by 90 degrees clockwise. Return the rotated array.
 
-<-- Write at least three test assertions for each method that you define. -->
+Write at least three test assertions for each method that you define.
 
 Example:
 Input
