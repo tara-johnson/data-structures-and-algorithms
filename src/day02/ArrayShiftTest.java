@@ -9,6 +9,16 @@ import static org.junit.jupiter.api.Assertions.*;
 class ArrayShiftTest {
 
     @Test
+    void emptyArrayTest() {
+        int[] arr = {};
+        int newVal = 5;
+        String result = Arrays.toString(ArrayShift.insertShiftArray(arr, newVal));
+
+        String expected = Arrays.toString(new int[] {5});
+        assertEquals(expected, result);
+    }
+
+    @Test
     void singleDigitArrayTest() {
         int[] arr = {1};
         int newVal = 2;
