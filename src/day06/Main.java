@@ -10,6 +10,7 @@ public class Main {
         ll.append(7);
         ll.prepend(66);
         ll.insertBefore(8, 70);
+        ll.insertBefore(34, 90);
         ll.insertAfter(12, 33);
 
         if (ll.isEmpty()) {
@@ -17,6 +18,8 @@ public class Main {
         }
 
         System.out.println("ll size: " + ll.size());
-        ll.printList();
+        System.out.println("ll get: " + ll.get(2));
+        String output = ll.printList();
+        System.out.println(output);
     }
 }

@@ -21,21 +21,29 @@ public class LinkedList {
     // Add a new node to the end of the list
     public void append(int data) {
         ListNode newNode = new ListNode(data);
+        // Assigns first list item as root
         ListNode current = this.root;
-        while(null != current.next) {
+        // While the next item in list is not null (the end of the list), add the next item to the list
+        while(current.next != null) {
             current = current.next;
         }
+        // At the end of the list (current.next == null), add the new node
         current.next = newNode;
     }
 
     // Add a new node before a specific element in the list
     public void insertBefore(int value, int newVal) {
         ListNode newNode = new ListNode(newVal);
+        // Assigns first list item as root
         ListNode current = this.root;
         ListNode previous = null;
         while (current != null) {
+            // If current data equals the value of the node we want to insert
+            // Assign the new node/value to the current node
             if (current.data == value) {
                 newNode.next = current;
+                // If previous isn't at the beginning of the list
+                // Assign the next node as the new node/value
                 if (previous !=  null) {
                     previous.next = newNode;
                 }
@@ -48,8 +56,11 @@ public class LinkedList {
     // Add a new node after a element in the list
     public void insertAfter(int value, int newVal) {
         ListNode newNode = new ListNode(newVal);
+        // Assigns first list item as root
         ListNode current = this.root;
         while (current != null) {
+            // If the current node equals the value of the node we want to insert
+            // Assign the new node/value as the next node/value
             if (current.data == value) {
                 newNode.next = current.next;
                 current.next = newNode;
@@ -82,14 +93,14 @@ public class LinkedList {
     }
 
     // Print list in readable format, ie 1 --> 2 --> null
-    public void printList() {
+    public String printList() {
         ListNode current = this.root;
         // Loop through each element in the list
+        StringBuilder listOutput = new StringBuilder(" ");
         while (current != null) {
-            System.out.print(current.data + " --> ");
+            listOutput.append(current.data + " --> ");
             current = current.next;
         }
-        // Last node points to null
-        System.out.print(current);
+        return listOutput.toString();
     }
 }
