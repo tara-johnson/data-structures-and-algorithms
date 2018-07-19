@@ -19,7 +19,8 @@ public class Main {
 
         System.out.println("ll size: " + ll.size());
         System.out.println("ll get: " + ll.get(2));
-        String output = ll.printList();
-        System.out.println(output);
+//        System.out.println("ll index: " + ll[0]);
+//        String output = ll.printList();
+//        System.out.println(output);
     }
 }

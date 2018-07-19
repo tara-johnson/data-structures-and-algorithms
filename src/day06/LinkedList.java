@@ -13,6 +13,7 @@ public class LinkedList {
 
     // 0(1) Add a new node at the front of the list
     public void prepend(int data) {
+        // Make the node, point it to the front, then reset front to it
         ListNode newNode = new ListNode(data);
         newNode.next = this.root;
         this.root = newNode;
@@ -36,37 +37,51 @@ public class LinkedList {
         ListNode newNode = new ListNode(newVal);
         // Assigns first list item as root
         ListNode current = this.root;
-        ListNode previous = null;
-        while (current != null) {
-            // If current data equals the value of the node we want to insert
-            // Assign the new node/value to the current node
-            if (current.data == value) {
-                newNode.next = current;
-                // If previous isn't at the beginning of the list
-                // Assign the next node as the new node/value
-                if (previous !=  null) {
-                    previous.next = newNode;
-                }
-            }
-            previous = current;
+
+        // If the value is at the root of the list, then handle the special case
+        // Replace explicitly the root and not just attaching it between two nodes in the middle of
+        // the list
+        if (this.root.data == value) {
+            this.prepend(value);
+//            newNode.next = this.root;
+//            this.root = newNode;
+//            return;
+        }
+
+        // Step through the list until we get to a current node that has the newNode value
+        while (current.next.data != value) {
+            // If the current node equals the value of the node we want to insert
+            // Assign the new node/value as the next node/value
             current = current.next;
         }
+
+        // Now tie new node into the list
+        newNode.next = current.next;
+        current.next = newNode;
     }
 
-    // Add a new node after a element in the list
+    // Insert the newVal before the first occurrence of value
+    // If value occurs multiple times in the list, it will be added in front of only the first time it appears
+    //
+    // value: Must be any existing value in the list
+    // newVal: A new value to add to the list
+    //
+    // [1, 2, 3, 4].insertAfter(3, 2) => [1, 3, 2, 3, 4]
     public void insertAfter(int value, int newVal) {
         ListNode newNode = new ListNode(newVal);
         // Assigns first list item as root
         ListNode current = this.root;
-        while (current != null) {
+
+        // Step through the list until we get to a current node that has the newNode value
+        while (current.data != value) {
             // If the current node equals the value of the node we want to insert
             // Assign the new node/value as the next node/value
-            if (current.data == value) {
-                newNode.next = current.next;
-                current.next = newNode;
-            }
             current = current.next;
         }
+
+        // Now tie new node into the list
+        newNode.next = current.next;
+        current.next = newNode;
     }
 
 
@@ -92,15 +107,24 @@ public class LinkedList {
         return current.data;
     }
 
-    // Print list in readable format, ie 1 --> 2 --> null
-    public String printList() {
+
+    public String toString() {
+        String result = "";
         ListNode current = this.root;
-        // Loop through each element in the list
-        StringBuilder listOutput = new StringBuilder(" ");
+
+        if (this.root == null) {
+            return "[]";
+        }
+
         while (current != null) {
-            listOutput.append(current.data + " --> ");
+            result += current.data;
+
+            // If there's another node after this one, place a comma and a space
+            if (current.next != null) {
+                result += ", ";
+            }
             current = current.next;
         }
-        return listOutput.toString();
+        return "[" + result + "]";
     }
 }
