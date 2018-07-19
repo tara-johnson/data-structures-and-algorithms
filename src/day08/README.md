@@ -20,4 +20,4 @@ Output
 ```
 
 ## Solution
-![alt text](assets/ll_kth_from_end.jpeg "ll_merge")
+![alt text](assets/ll_merge.jpg "ll_merge")
