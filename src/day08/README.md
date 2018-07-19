@@ -23,5 +23,6 @@ Output
 ![alt text](assets/ll_merge.jpg "ll_merge")
 
 ## Contributors
-Tara Johnson
 Brandon Fenty
+Molly Kent
+Tara Johnson
