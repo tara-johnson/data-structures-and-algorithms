@@ -21,3 +21,7 @@ Output
 
 ## Solution
 ![alt text](assets/ll_merge.jpg "ll_merge")
+
+## Contributors
+Tara Johnson
+Brandon Fenty
