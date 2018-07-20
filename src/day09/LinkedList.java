@@ -147,6 +147,36 @@ public class LinkedList {
         return temp;
     }
 
+    public boolean hasLoop() {
+        // Initialize boolean hasLoop variable as false
+        boolean hasLoop = false;
+
+        // Check if the list is empty. If so, the list is circular.
+        if (this.root == null) {
+            hasLoop = true;
+            return hasLoop;
+        }
+
+        // Set two ListNode variables to keep track of where we are in the list
+        // cur1 is the root of the list
+        // cur2 is two steps ahead
+        ListNode cur1 = this.root;
+        ListNode cur2 = cur1.next.next;
+
+        // Step both variables through the list until either points to null (the list has an end and is not circular)
+        while (cur1.next != null && cur2.next.next != null) {
+            cur1 = cur1.next;
+            cur2 = cur2.next.next;
+
+            // If cur1 and cur2 meet, the list is circular
+            if (cur1 == cur2) {
+                hasLoop = true;
+                return hasLoop;
+            }
+        }
+        return hasLoop;
+    }
+
     public String toString() {
         String result = "";
         ListNode current = this.root;
@@ -166,27 +196,4 @@ public class LinkedList {
         }
         return "[" + result + "]";
     }
-
-    public boolean hasLoop() {
-        boolean hasLoop = false;
-        ListNode cur1 = this.root;
-        System.out.println(this.root.data);
-        ListNode cur2 = cur1.next.next;
-        System.out.println(cur1.next.next.data);
-        while (cur1.next != null && cur2.next.next != null) {
-            System.out.println("in while loop");
-            cur1 = cur1.next;
-            System.out.println("cur1.next: " + cur1.next.data);
-            cur2 = cur2.next.next;
-            System.out.println("cur2.next.next: " + cur2.next.next.data);
-            if (cur1.next.data == cur2.next.next.data) {
-                hasLoop = true;
-                System.out.println(hasLoop);
-                return hasLoop;
-            }
-        }
-        System.out.println(hasLoop);
-        return hasLoop;
-    }
-
 }

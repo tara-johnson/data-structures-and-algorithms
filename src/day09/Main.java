@@ -20,6 +20,5 @@ public class Main {
 //        System.out.println("ll size: " + ll.size());
 //        System.out.println("ll get: " + ll.get(7));
 //        System.out.println("ll string: " + ll);
-        System.out.println("hasLoop: " + ll.hasLoop());
     }
 }
