@@ -1,4 +1,4 @@
-package day08;
+package day09;
 
 public class LinkedList {
     public ListNode root;
@@ -166,4 +166,27 @@ public class LinkedList {
         }
         return "[" + result + "]";
     }
+
+    public boolean hasLoop() {
+        boolean hasLoop = false;
+        ListNode cur1 = this.root;
+        System.out.println(this.root.data);
+        ListNode cur2 = cur1.next.next;
+        System.out.println(cur1.next.next.data);
+        while (cur1.next != null && cur2.next.next != null) {
+            System.out.println("in while loop");
+            cur1 = cur1.next;
+            System.out.println("cur1.next: " + cur1.next.data);
+            cur2 = cur2.next.next;
+            System.out.println("cur2.next.next: " + cur2.next.next.data);
+            if (cur1.next.data == cur2.next.next.data) {
+                hasLoop = true;
+                System.out.println(hasLoop);
+                return hasLoop;
+            }
+        }
+        System.out.println(hasLoop);
+        return hasLoop;
+    }
+
 }
