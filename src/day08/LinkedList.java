@@ -1,7 +1,7 @@
 package day08;
 
 public class LinkedList {
-    ListNode root;
+    public ListNode root;
 
     public LinkedList() {
         this.root = null;
@@ -115,18 +115,24 @@ public class LinkedList {
         return current;
     }
 
-    public LinkedList mergeLists(LinkedList ll1, LinkedList ll2) {
+    public static LinkedList mergeLists(LinkedList ll1, LinkedList ll2) {
         LinkedList temp = new LinkedList();
         ListNode cur1 = ll1.root;
         ListNode cur2 = ll2.root;
-        temp.root = cur1;
-        temp.append(cur2.data);
+
+        temp.root = new ListNode(cur1.data);
+        temp.root.next = new ListNode(cur2.data);
+
+//        temp.append(cur2.data);
+
         while(cur1.next != null && cur2.next != null) {
             temp.append(cur1.next.data);
             temp.append(cur2.next.data);
+
             cur1 = cur1.next;
             cur2 = cur2.next;
         }
+
         if(cur1.next != null) {
             while(cur1.next !=  null) {
                 temp.append(cur1.next.data);

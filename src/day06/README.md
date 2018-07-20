@@ -1,5 +1,4 @@
 # Linked List Insertions
-Rotate a 3x3 matrix (an array of integers), by 90 degrees clockwise.
 
 ## Challenge
 Write the following methods for the Linked List class:
@@ -15,33 +14,33 @@ Write at least three test assertions for each method that you define.
 Example:
 
 .append(value)
-Input
+Input\
 ```
 head -> [1] -> [3] -> [2] -> x
 ```
-Output
+Output\
 Arguments: 5
 ```
 head -> [1] -> [3] -> [2] -> [5] -> x
 ```
 
 .insertBefore(value, newVal)
-Input
+Input\
 ```
 head -> [1] -> [3] -> [2] -> x
 ```
-Output
+Output\
 Arguments: 3, 5
 ```
 head -> [1] -> [5] -> [3] -> [2] -> x
 ```
 
 .insertAfter(value, newVal)
-Input
+Input\
 ```
 head -> [1] -> [3] -> [2] -> x
 ```
-Output
+Output\
 Arguments: 3, 5
 ```
 head -> [1] -> [3] -> [5] -> [2] -> x
