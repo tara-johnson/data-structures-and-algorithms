@@ -43,9 +43,6 @@ public class LinkedList {
         // the list
         if (this.root.data == value) {
             this.prepend(value);
-//            newNode.next = this.root;
-//            this.root = newNode;
-//            return;
         }
 
         // Step through the list until we get to a current node that has the newNode value
