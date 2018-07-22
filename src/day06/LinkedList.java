@@ -12,6 +12,7 @@ public class LinkedList {
     }
 
     // 0(1) Add a new node at the front of the list
+    // Always take the same constant amount of to prepend to a linked list
     public void prepend(int data) {
         // Make the node, point it to the front, then reset front to it
         ListNode newNode = new ListNode(data);
@@ -22,33 +23,36 @@ public class LinkedList {
     // Add a new node to the end of the list
     public void append(int data) {
         ListNode newNode = new ListNode(data);
-        // Assigns first list item as root
-        ListNode current = this.root;
-        // While the next item in list is not null (the end of the list), add the next item to the list
-        while(current.next != null) {
-            current = current.next;
+
+        if (this.root == null) {
+            this.root = newNode;
+        } else {
+            // Assigns first list item as root
+            ListNode current = this.root;
+            // While the next item in list is not null (the end of the list), add the next item to the list
+            while(current.next != null) {
+                current = current.next;
+            }
+            // At the end of the list (current.next == null), add the new node
+            current.next = newNode;
         }
-        // At the end of the list (current.next == null), add the new node
-        current.next = newNode;
     }
 
     // Add a new node before a specific element in the list
-    public void insertBefore(int value, int newVal) {
+    public void insertBefore(int target, int newVal) {
         ListNode newNode = new ListNode(newVal);
-        // Assigns first list item as root
         ListNode current = this.root;
 
         // If the value is at the root of the list, then handle the special case
-        // Replace explicitly the root and not just attaching it between two nodes in the middle of
-        // the list
-        if (this.root.data == value) {
-            this.prepend(value);
+        // Replace explicitly the root and not just attaching it between two nodes in the middle of the list
+        if (this.root.data == target) {
+            newNode.next = this.root;
+            this.root = newNode;
+            return;
         }
 
         // Step through the list until we get to a current node that has the newNode value
-        while (current.next.data != value) {
-            // If the current node equals the value of the node we want to insert
-            // Assign the new node/value as the next node/value
+        while (current.next.data != target) {
             current = current.next;
         }
 
@@ -63,24 +67,20 @@ public class LinkedList {
     // value: Must be any existing value in the list
     // newVal: A new value to add to the list
     //
-    // [1, 2, 3, 4].insertAfter(3, 2) => [1, 3, 2, 3, 4]
+    // [1, 3, 3, 4].insertAfter(3, 2) => [1, 3, 2, 3, 4]
     public void insertAfter(int value, int newVal) {
         ListNode newNode = new ListNode(newVal);
-        // Assigns first list item as root
         ListNode current = this.root;
 
-        // Step through the list until we get to a current node that has the newNode value
+        // Step through the list until we get to a current node that has the target value
         while (current.data != value) {
-            // If the current node equals the value of the node we want to insert
-            // Assign the new node/value as the next node/value
             current = current.next;
         }
 
-        // Now tie new node into the list
+        // Tie the new node into the list
         newNode.next = current.next;
         current.next = newNode;
     }
-
 
     // Get the total number of elements in a list
     public int size() {
@@ -103,7 +103,6 @@ public class LinkedList {
         }
         return current.data;
     }
-
 
     public String toString() {
         String result = "";
