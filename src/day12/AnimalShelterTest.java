@@ -1,5 +1,6 @@
 package day12;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.LinkedList;
@@ -20,6 +21,20 @@ class AnimalShelterTest {
 
         System.out.println(AnimalShelter.shelterToString(animalShelter));
         return animalShelter;
+    }
+
+    @Test
+    void enqueueAnimals() {
+        AnimalShelter shelter = new AnimalShelter();
+        Cat cat1 = new Cat("Fluffy");
+        Cat cat2 = new Cat("Patches");
+        Dog dog1 = new Dog("Spike");
+        shelter.enqueue(cat1);
+        shelter.enqueue(cat2);
+        shelter.enqueue(dog1);
+        String result = shelter.toString();
+
+        System.out.println(result);
     }
 
     @Test
