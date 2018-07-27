@@ -2,9 +2,6 @@ package day14;
 
 import org.junit.jupiter.api.Test;
 
-import java.util.Stack;
-
-//import static day14.MaxStack.maxStack;
 import static org.junit.jupiter.api.Assertions.*;
 
 class MaxStackTest {
@@ -12,8 +9,8 @@ class MaxStackTest {
     @Test
     void emptyStackTest() {
         MaxStack s1 = new MaxStack();
-        int result = s1.maxValue();
-        assertEquals(0, result);
+        Integer result = s1.maxValue();
+        assertEquals(null, result);
     }
 
     @Test
@@ -23,55 +20,14 @@ class MaxStackTest {
         s1.push(2);
         s1.push(6);
         s1.push(5);
+        int result1 = s1.maxValue();
         s1.push(4);
         s1.push(7);
         s1.push(3);
+        int result2 = s1.maxValue();
 
-        System.out.println(s1.toString());
-        int result = s1.maxValue();
-        assertEquals(7, result);
-    }
-
-    @Test
-    void maxStackPopTest() {
-        MaxStack s1 = new MaxStack();
-
-        s1.push(2);
-        s1.push(6);
-        s1.push(5);
-        s1.push(4);
-        s1.push(7);
-        s1.remove();
-        s1.push(2);
-        s1.push(6);
-        s1.push(5);
-        s1.push(4);
-        s1.remove();
-        s1.push(7);
-        s1.push(3);
-        s1.remove();
-        s1.remove();
-
-        System.out.println(s1.toString());
-        int result = s1.maxValue();
-        assertEquals(6, result);
-    }
-
-    @Test
-    void maxStackPushAndPopTest() {
-        MaxStack mainStack = new MaxStack();
-
-        mainStack.push(2);
-        mainStack.push(6);
-        mainStack.push(5);
-        mainStack.push(4);
-        mainStack.push(7);
-        mainStack.remove();
-        mainStack.push(3);
-
-        System.out.println(mainStack.toString());
-        int result = mainStack.maxValue();
-        assertEquals(6, result);
+        assertEquals(6, result1);
+        assertEquals(7, result2);
     }
 
     @Test
@@ -82,77 +38,42 @@ class MaxStackTest {
         s1.push(5);
         s1.push(4);
         s1.push(7);
+        s1.push(7);
+        int result1 = s1.maxValue();
         s1.remove();
+        int result2 = s1.maxValue();
+
+        System.out.println(result1);
+        System.out.println(result2);
+
+        assertEquals(7, result1);
+        assertEquals(7, result2);
+        assertEquals(result1, result2);
+    }
+
+    @Test
+    void maxStackRemoveTest() {
+        MaxStack s1 = new MaxStack();
+
+        s1.push(2);
+        s1.push(6);
+        s1.push(5);
+        int result1 = s1.maxValue(); // expect result1 = 6
+        s1.remove();
+        int result2 = s1.maxValue(); // expect result2 = 6
+        s1.remove();
+        int result3 = s1.maxValue(); // expect result3 = 2
+        s1.push(4);
         s1.push(7);
         s1.push(3);
-        System.out.println(s1.toString());
-        int result = s1.maxValue();
-        assertEquals(7, result);
+        int result4 = s1.maxValue(); // expect result4 = 7
+        s1.remove();
+        int result5 = s1.maxValue(); // expect result5 = 7
+
+        assertEquals(6, result1);
+        assertEquals(6, result2);
+        assertEquals(2, result3);
+        assertEquals(7, result4);
+        assertEquals(7, result5);
     }
 }
-
-//    @Test
-//    void maxValuePushTest() {
-//        Stack<Integer> s1 = new Stack<>();
-//        s1.push(2);
-//        s1.push(6);
-//        s1.push(5);
-//        s1.push(4);
-//        s1.push(7);
-//        s1.push(3);
-//        maxStack(s1);
-//        assertEquals(7, maxStack(s1));
-//    }
-//
-//    @Test
-//    void maxValuePopTest() {
-//        Stack<Integer> s1 = new Stack<>();
-//        s1.push(2);
-//        s1.push(6);
-//        s1.push(5);
-//        s1.push(4);
-//        s1.push(7);
-//        s1.push(10);
-//        s1.pop();
-//        s1.push(2);
-//        maxStack(s1);
-//        assertEquals(7, maxStack(s1));
-//    }
-//
-//    @Test
-//    void maxValuePushAndPopTest() {
-//        Stack<Integer> s1 = new Stack<>();
-//        s1.push(2);
-//        s1.push(6);
-//        s1.pop();
-//        s1.push(5);
-//        s1.push(4);
-//        s1.push(7);
-//        s1.pop();
-//        s1.push(3);
-//        maxStack(s1);
-//        assertEquals(5, maxStack(s1));
-//    }
-//
-//    @Test
-//    void maxValueFirstElementTest() {
-//        Stack<Integer> s1 = new Stack<>();
-//        s1.push(10);
-//        s1.push(6);
-//        s1.pop();
-//        s1.push(5);
-//        s1.push(4);
-//        s1.push(7);
-//        s1.pop();
-//        s1.push(3);
-//        MaxStack.maxStack(s1);
-//        assertEquals(10, maxStack(s1));
-//    }
-//
-//    @Test
-//    void emptyStackTest() {
-//        Stack<Integer> s1 = new Stack<>();
-//        maxStack(s1);
-//        assertEquals(0, maxStack(s1));
-//    }
-//}

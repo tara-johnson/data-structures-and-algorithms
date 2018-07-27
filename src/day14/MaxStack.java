@@ -23,77 +23,38 @@ public class MaxStack extends Stack {
             mainStack.add(n);
             System.out.println("Starts with an element mainStack: " + mainStack);
             // Add 'n' to maxStack if it's value is greater than the top value in maxStack
-            if (n > maxStack.peek()) {
+            if (n >= maxStack.peek()) {
                 maxStack.add(n);
                 System.out.println("If n is greater than peek maxStack: " + maxStack);
             }
         }
     }
 
-    public int remove() {
+    public Integer remove() {
         // If there are elements in the mainStack compare the top element in both stacks
-        if (!mainStack.isEmpty()) {
+        try {
             // If they are equal, pop it from maxStack since it is no longer the maxValue
             if (mainStack.peek() == maxStack.peek()) {
                 maxStack.pop();
-                System.out.println("max stack after pop: " + maxStack);
-                System.out.println("main stack before pop: " + mainStack);
-                return mainStack.pop();
+                System.out.println("maxStack after pop: " + maxStack);
+                return (int) mainStack.pop();
             } else {
                 mainStack.pop();
-                System.out.println("main stack after pop: " + mainStack);
+                System.out.println("mainStack after pop: " + mainStack);
             }
+        } catch (Exception e) {
+            System.out.println("Stack is empty");
         }
-        return 0;
+        return null;
     }
 
     // The top element in maxStack is the maximum value
     // .peek() returns the value
-    public int maxValue() {
+    public Integer maxValue() {
         if (mainStack.isEmpty()) {
-            return 0;
+            return null;
         }
         System.out.println(maxStack.peek());
-        return maxStack.peek();
+        return (int) maxStack.peek();
     }
 }
-
-// This solution may not meet the requirements of the challenge
-//public class MaxStack extends Stack {
-//
-//    // Method accepts an argument of a stack
-//    public static int maxStack(Stack<Integer> s1) {
-//        // Set up two stacks, one to hold the max values
-////        s1 = new Stack<>();
-//        Stack<Integer> maxStack = new Stack<>();
-//
-//        if (s1.isEmpty()) {
-//            return 0;
-//        }
-//
-//        // Get the size of the stack
-//        int s1Length = s1.size();
-//
-//        // Set the maxValue variable to keep track of the maxValue
-//        int maxValue = maxStack.push(s1.peek());
-//
-//        // Iterate through the stack and compare maxValue to the value of each element in the stack
-//        for (int value : s1) {
-//            // if maxValue is less than the value of the element in the stack
-//            // set the maxValue to value
-//            // push the value into maxStack
-//            if (maxValue < value) {
-//                System.out.println("maxValue: " + maxValue);
-//                System.out.println("value: " + value);
-//                maxValue = value;
-//                System.out.println("value: " + value);
-//                maxStack.push(value);
-//                System.out.println("maxStack: " + maxStack);
-//            }
-//        }
-//
-//        System.out.println("maxStack: " + maxStack);
-//        System.out.println("maxStack peek: " + maxStack.peek());
-//        return maxStack.peek();
-//    }
-//}

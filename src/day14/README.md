@@ -18,5 +18,4 @@ returns 7
 ```
 
 ## Solution
-![alt text](assets/stack_max_1.jpg "stack-max")
-![alt text](assets/stack_max_2.jpg "stack-max")
+![alt text](assets/stack_max.jpg "stack_max")
