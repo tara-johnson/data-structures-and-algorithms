@@ -12,7 +12,7 @@ Example:
 ```
 n = 3
 
-[A, B, C, D, E] // 1A, 2B, 3C
+[A, B, C, D, E] // 1A, 2B, 3C, 4D, 5E
 [A, B, _, D, E] // C was removed
 [_, B, _, D, E] // A was removed
 [_, B, _, D, _] // E was removed

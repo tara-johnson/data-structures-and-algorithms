@@ -4,9 +4,10 @@ import java.util.Queue;
 
 public class EeneyMeeney {
     public static String eeneyMeeneyMineyMoe(Queue<String> qq, int n) {
+        // Only count through the queue if there is more than 1 person in it
         while (qq.size() > 1) {
             // Iterate through the queue 'n' times and move the people you are passing over to the back of the queue
-            for (int count = 0; count < n - 1; count++) {
+            for (int i = 0; i < n - 1; i++) {
                 String passedPerson = qq.poll();
                 qq.add(passedPerson);
             }
