@@ -10,6 +10,10 @@ public class Pet {
         this.name = name;
     }
 
+    public String toString() {
+        return this.name;
+    }
+
     // This method is overwritten by the sub-classes Cat and Dog (or any animal that is created)
     public String sound() {
         return "";
