@@ -33,7 +33,8 @@ Arguments: 5
 
 ## Solution
 ![alt text](assets/queue_with_stacks.jpg "queue_with_stacks")
+![alt text](assets/queue_with_stacks_2.jpg "queue_with_stacks")
 
 ## Contributors
-Tara Johnson
+Tara Johnson  
 Molly Kent
