@@ -10,4 +10,5 @@ Write a function that takes a tree as an argument. Determine whether or not the 
 
 ## Contributors
 Nick Dipietro  
-Tara Johnson
+Tara Johnson  
+Paul Suarez
