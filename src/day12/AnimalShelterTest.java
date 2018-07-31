@@ -1,6 +1,5 @@
 package day12;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.LinkedList;
@@ -10,31 +9,101 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class AnimalShelterTest {
 
-    public Queue<Pet> setupTestQueue() {
-        Queue<Pet> animalShelter = new LinkedList<>();
-        Cat cat1 = new Cat("Fluffy");
-        animalShelter.add(cat1);
-        Cat cat2 = new Cat("Patches");
-        animalShelter.add(cat2);
-        Dog dog1 = new Dog("Spike");
-        animalShelter.add(dog1);
-
-        System.out.println(AnimalShelter.shelterToString(animalShelter));
-        return animalShelter;
-    }
-
     @Test
     void enqueueAnimals() {
         AnimalShelter shelter = new AnimalShelter();
-        Cat cat1 = new Cat("Fluffy");
-        Cat cat2 = new Cat("Patches");
-        Dog dog1 = new Dog("Spike");
+        Dog dog1 = new Dog("Schweppes");
+        Cat cat1 = new Cat("Patches");
+        Dog dog2 = new Dog("Shane");
+        Cat cat2 = new Cat("Chloe");
+        Dog dog3 = new Dog("Lex");
+        Cat cat3 = new Cat("Dylan");
+        Cat cat4 = new Cat("Delilah");
+        shelter.enqueue(dog1);
+        shelter.enqueue(cat1);
+        shelter.enqueue(dog2);
+        shelter.enqueue(cat2);
+        shelter.enqueue(dog3);
+        shelter.enqueue(cat3);
+        shelter.enqueue(cat4);
+
+        String expected = "[Schweppes, Patches, Shane, Chloe, Lex, Dylan, Delilah]";
+        String result = shelter.toString();
+        System.out.println("Expected: " + expected);
+        System.out.println("Result: " + result);
+
+        assertEquals(expected, result);
+    }
+
+    @Test
+    void dequeueNotCatOrDogTest() {
+        AnimalShelter shelter = new AnimalShelter();
+        Dog dog1 = new Dog("Schweppes");
+        Cat cat1 = new Cat("Patches");
+        Dog dog2 = new Dog("Shane");
+        Cat cat2 = new Cat("Chloe");
+        Dog dog3 = new Dog("Lex");
+        Cat cat3 = new Cat("Dylan");
+        Cat cat4 = new Cat("Delilah");
+        shelter.enqueue(dog1);
+        shelter.enqueue(cat1);
+        shelter.enqueue(dog2);
+        shelter.enqueue(cat2);
+        shelter.enqueue(dog3);
+        shelter.enqueue(cat3);
+        shelter.enqueue(cat4);
+
+        String result = shelter.dequeue("bird");
+        String expected = "Schweppes";
+
+        System.out.println("Expected: " + expected);
+        System.out.println("Result: " + result);
+    }
+
+    @Test
+    void dequeueDogFirstTest() {
+        AnimalShelter shelter = new AnimalShelter();
+        Dog dog1 = new Dog("Schweppes");
+        Cat cat1 = new Cat("Patches");
+        Dog dog2 = new Dog("Shane");
+        Cat cat2 = new Cat("Chloe");
+        Dog dog3 = new Dog("Lex");
+        Cat cat3 = new Cat("Dylan");
+        Cat cat4 = new Cat("Delilah");
+        shelter.enqueue(dog1);
+        shelter.enqueue(cat1);
+        shelter.enqueue(dog2);
+        shelter.enqueue(cat2);
+        shelter.enqueue(dog3);
+        shelter.enqueue(cat3);
+        shelter.enqueue(cat4);
+
+        String result = shelter.dequeue("dog");
+        String expected = "Schweppes";
+
+        System.out.println("Expected: " + expected);
+        System.out.println("Result: " + result);
+    }
+
+    @Test
+    void dequeueDogNotFirstTest() {
+        AnimalShelter shelter = new AnimalShelter();
+        Cat cat1 = new Cat("Patches");
+        Cat cat2 = new Cat("Chloe");
+        Dog dog3 = new Dog("Lex");
+        Cat cat3 = new Cat("Dylan");
+        Cat cat4 = new Cat("Delilah");
         shelter.enqueue(cat1);
         shelter.enqueue(cat2);
-        shelter.enqueue(dog1);
-        String result = shelter.toString();
+        shelter.enqueue(dog3);
+        shelter.enqueue(cat3);
+        shelter.enqueue(cat4);
 
-        System.out.println(result);
+        String result = shelter.dequeue("dog");
+        String expected = "Lex";
+
+        System.out.println("Expected: " + expected);
+        System.out.println("Result: " + result);
     }
 
     @Test
@@ -49,10 +118,5 @@ class AnimalShelterTest {
         Dog dog1 = new Dog("Spike");
         assertEquals("Spike", dog1.name());
         assertEquals("bark", dog1.sound());
-    }
-
-    @Test
-    void makeShelterTest() {
-        setupTestQueue();
     }
 }

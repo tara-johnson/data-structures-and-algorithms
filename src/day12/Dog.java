@@ -10,7 +10,6 @@ public class Dog extends Pet {
 
     // Method to see what kind of sound this specific type of Pet makes
     public String sound() {
-        System.out.println("bark");
         return "bark";
     }
 }
