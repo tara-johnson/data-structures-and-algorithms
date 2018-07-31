@@ -7,3 +7,7 @@ Write a function that takes a tree as an argument. Determine whether or not the 
 
 ## Solution
 ![alt text](assets/fizzbuzztree.jpg "FizzBuzzTree")
+
+## Contributors
+Nick Dipietro  
+Tara Johnson
