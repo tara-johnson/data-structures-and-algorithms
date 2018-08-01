@@ -32,3 +32,4 @@ FALSE
 ## Solution
 ![alt text](assets/multi_bracket_validation_1.jpg "multi_bracket_validation")
 ![alt text](assets/multi_bracket_validation_2.jpg "multi_bracket_validation")
+![alt text](assets/multi_bracket_validation_3.jpg "multi_bracket_validation")
