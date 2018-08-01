@@ -10,113 +10,190 @@ import static org.junit.jupiter.api.Assertions.*;
 class AnimalShelterTest {
 
     @Test
-    void enqueueAnimals() {
+    void emptyQueues() {
         AnimalShelter shelter = new AnimalShelter();
-        Dog dog1 = new Dog("Schweppes");
-        Cat cat1 = new Cat("Patches");
-        Dog dog2 = new Dog("Shane");
-        Cat cat2 = new Cat("Chloe");
-        Dog dog3 = new Dog("Lex");
-        Cat cat3 = new Cat("Dylan");
-        Cat cat4 = new Cat("Delilah");
-        shelter.enqueue(dog1);
-        shelter.enqueue(cat1);
-        shelter.enqueue(dog2);
-        shelter.enqueue(cat2);
-        shelter.enqueue(dog3);
-        shelter.enqueue(cat3);
-        shelter.enqueue(cat4);
 
-        String expected = "[Schweppes, Patches, Shane, Chloe, Lex, Dylan, Delilah]";
-        String result = shelter.toString();
-        System.out.println("Expected: " + expected);
-        System.out.println("Result: " + result);
+        String expectedDog = "[]";
+        String resultsDog = shelter.dogShelter.toString();
+        System.out.println("Expected dog queue: " + expectedDog);
+        System.out.println("Results dog queue: " + resultsDog);
 
-        assertEquals(expected, result);
+        String expectedCat = "[]";
+        String resultsCat = shelter.catShelter.toString();
+        System.out.println("Expected cat queue: " + expectedCat);
+        System.out.println("Results cat queue: " + resultsCat);
+
+        assertEquals(expectedDog, resultsDog);
+        assertEquals(expectedCat, resultsCat);
     }
 
     @Test
-    void dequeueNotCatOrDogTest() {
+    void enqueueOneDog() {
         AnimalShelter shelter = new AnimalShelter();
-        Dog dog1 = new Dog("Schweppes");
-        Cat cat1 = new Cat("Patches");
-        Dog dog2 = new Dog("Shane");
-        Cat cat2 = new Cat("Chloe");
-        Dog dog3 = new Dog("Lex");
-        Cat cat3 = new Cat("Dylan");
-        Cat cat4 = new Cat("Delilah");
-        shelter.enqueue(dog1);
-        shelter.enqueue(cat1);
-        shelter.enqueue(dog2);
-        shelter.enqueue(cat2);
-        shelter.enqueue(dog3);
-        shelter.enqueue(cat3);
-        shelter.enqueue(cat4);
+        shelter.enqueue("dog");
 
-        String result = shelter.dequeue("bird");
-        String expected = "Schweppes";
+        String expectedDog = "[dog]";
+        String resultsDog = shelter.dogShelter.toString();
+        System.out.println("Expected dog queue: " + expectedDog);
+        System.out.println("Results dog queue: " + resultsDog);
 
-        System.out.println("Expected: " + expected);
-        System.out.println("Result: " + result);
+        String expectedCat = "[]";
+        String resultsCat = shelter.catShelter.toString();
+        System.out.println("Expected cat queue: " + expectedCat);
+        System.out.println("Results cat queue: " + resultsCat);
+
+        assertEquals(expectedDog, resultsDog);
+        assertEquals(expectedCat, resultsCat);
     }
 
     @Test
-    void dequeueDogFirstTest() {
+    void enqueueOneCat() {
         AnimalShelter shelter = new AnimalShelter();
-        Dog dog1 = new Dog("Schweppes");
-        Cat cat1 = new Cat("Patches");
-        Dog dog2 = new Dog("Shane");
-        Cat cat2 = new Cat("Chloe");
-        Dog dog3 = new Dog("Lex");
-        Cat cat3 = new Cat("Dylan");
-        Cat cat4 = new Cat("Delilah");
-        shelter.enqueue(dog1);
-        shelter.enqueue(cat1);
-        shelter.enqueue(dog2);
-        shelter.enqueue(cat2);
-        shelter.enqueue(dog3);
-        shelter.enqueue(cat3);
-        shelter.enqueue(cat4);
+        shelter.enqueue("cat");
 
-        String result = shelter.dequeue("dog");
-        String expected = "Schweppes";
+        String expectedDog = "[]";
+        String resultsDog = shelter.dogShelter.toString();
+        System.out.println("Expected dog queue: " + expectedDog);
+        System.out.println("Results dog queue: " + resultsDog);
 
-        System.out.println("Expected: " + expected);
-        System.out.println("Result: " + result);
+        String expectedCat = "[cat]";
+        String resultsCat = shelter.catShelter.toString();
+        System.out.println("Expected cat queue: " + expectedCat);
+        System.out.println("Results cat queue: " + resultsCat);
+
+        assertEquals(expectedDog, resultsDog);
+        assertEquals(expectedCat, resultsCat);
     }
 
     @Test
-    void dequeueDogNotFirstTest() {
+    void enqueueManyAnimals() {
         AnimalShelter shelter = new AnimalShelter();
-        Cat cat1 = new Cat("Patches");
-        Cat cat2 = new Cat("Chloe");
-        Dog dog3 = new Dog("Lex");
-        Cat cat3 = new Cat("Dylan");
-        Cat cat4 = new Cat("Delilah");
-        shelter.enqueue(cat1);
-        shelter.enqueue(cat2);
-        shelter.enqueue(dog3);
-        shelter.enqueue(cat3);
-        shelter.enqueue(cat4);
+        shelter.enqueue("dog");
+        shelter.enqueue("cat");
+        shelter.enqueue("dog");
+        shelter.enqueue("cat");
+        shelter.enqueue("dog");
+        shelter.enqueue("cat");
+        shelter.enqueue("cat");
 
-        String result = shelter.dequeue("dog");
-        String expected = "Lex";
+        String expectedDog = "[dog, dog, dog]";
+        String resultsDog = shelter.dogShelter.toString();
+        System.out.println("Expected dog queue: " + expectedDog);
+        System.out.println("Results dog queue: " + resultsDog);
 
-        System.out.println("Expected: " + expected);
-        System.out.println("Result: " + result);
+        String expectedCat = "[cat, cat, cat, cat]";
+        String resultsCat = shelter.catShelter.toString();
+        System.out.println("Expected cat queue: " + expectedCat);
+        System.out.println("Results cat queue: " + resultsCat);
+
+        assertEquals(expectedDog, resultsDog);
+        assertEquals(expectedCat, resultsCat);
+
     }
 
     @Test
-    void makeCatTest() {
-        Cat cat1 = new Cat("Fluffy");
-        assertEquals("Fluffy", cat1.name());
-        assertEquals("meow", cat1.sound());
+    void enqueueWrongAnimal() {
+        AnimalShelter shelter = new AnimalShelter();
+        shelter.enqueue("fish");
+
+        String expectedDog = "[]";
+        String resultsDog = shelter.dogShelter.toString();
+        System.out.println("Expected dog queue: " + expectedDog);
+        System.out.println("Results dog queue: " + resultsDog);
+
+        String expectedCat = "[]";
+        String resultsCat = shelter.catShelter.toString();
+        System.out.println("Expected cat queue: " + expectedCat);
+        System.out.println("Results cat queue: " + resultsCat);
+
+        String expectedWrong = "Sorry, we only take dogs and cats";
+        String resultsWrong = shelter.enqueue("fish");
+        System.out.println("Expected wrong reply: " + expectedWrong);
+        System.out.println("Results wrong reply: " + resultsWrong);
+
+        assertEquals(expectedDog, resultsDog);
+        assertEquals(expectedCat, resultsCat);
+        assertEquals(expectedWrong, resultsWrong);
     }
 
     @Test
-    void makeDogTest() {
-        Dog dog1 = new Dog("Spike");
-        assertEquals("Spike", dog1.name());
-        assertEquals("bark", dog1.sound());
+    void emptyQueueDequeue() {
+        AnimalShelter shelter = new AnimalShelter();
+
+        String expectedDog = "Sorry, we don't have dogs or cats right now";
+        String resultsDog = shelter.dequeue("dog");
+        System.out.println("Expected empty dog queue: " + expectedDog);
+        System.out.println("Results empty dog queue: " + resultsDog);
+
+        String expectedCat = "Sorry, we don't have dogs or cats right now";
+        String resultsCat = shelter.dequeue("cat");
+        System.out.println("Expected empty cat queue: " + expectedCat);
+        System.out.println("Results empty cat queue: " + resultsCat);
+
+        assertEquals(expectedDog, resultsDog);
+        assertEquals(expectedCat, resultsCat);
+    }
+
+    @Test
+    void dequeueFromSingleQueue() {
+        AnimalShelter shelter = new AnimalShelter();
+
+        shelter.enqueue("dog");
+        shelter.enqueue("cat");
+        shelter.dequeue("dog");
+        shelter.dequeue("cat");
+
+        String expectedDog = "[]";
+        String resultsDog = shelter.dogShelter.toString();
+        System.out.println("Expected dog queue: " + expectedDog);
+        System.out.println("Results dog queue: " + resultsDog);
+
+        String expectedCat = "[]";
+        String resultsCat = shelter.catShelter.toString();
+        System.out.println("Expected cat queue: " + expectedCat);
+        System.out.println("Results cat queue: " + resultsCat);
+
+        assertEquals(expectedDog, resultsDog);
+        assertEquals(expectedCat, resultsCat);
+    }
+
+    @Test
+    void dequeueOneEach() {
+        AnimalShelter shelter = new AnimalShelter();
+
+        shelter.enqueue("dog");
+        shelter.enqueue("cat");
+        shelter.enqueue("dog");
+        shelter.enqueue("cat");
+        shelter.enqueue("dog");
+        shelter.enqueue("cat");
+        shelter.enqueue("cat");
+        shelter.dequeue("dog");
+        shelter.dequeue("cat");
+
+        String expectedDog = "[dog, dog]";
+        String resultsDog = shelter.dogShelter.toString();
+        System.out.println("Expected dog queue: " + expectedDog);
+        System.out.println("Results dog queue: " + resultsDog);
+
+        String expectedCat = "[cat, cat, cat]";
+        String resultsCat = shelter.catShelter.toString();
+        System.out.println("Expected cat queue: " + expectedCat);
+        System.out.println("Results cat queue: " + resultsCat);
+
+        assertEquals(expectedDog, resultsDog);
+        assertEquals(expectedCat, resultsCat);
+    }
+
+    @Test
+    void wrongAnimalDequeue() {
+        AnimalShelter shelter = new AnimalShelter();
+
+        String expectedWrong = "Sorry, we only have dogs and cats";
+        String resultsWrong = shelter.dequeue("fish");
+        System.out.println("Expected wrong animal message: " + expectedWrong);
+        System.out.println("Results wrong animal message: " + resultsWrong);
+
+        assertEquals(expectedWrong, resultsWrong);
     }
 }
