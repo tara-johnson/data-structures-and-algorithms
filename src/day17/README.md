@@ -28,3 +28,7 @@ Output
 
 ## Solution
 ![alt text](assets/breadth-first-traversal.jpg "breadth-first-traversal")
+
+##Contributors
+Nick DiPietro  
+Tara Johnson
