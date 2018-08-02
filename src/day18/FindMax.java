@@ -51,6 +51,11 @@ public class FindMax {
         // Create a queue to hold the tree nodes
         Queue<TreeNode> qq = new LinkedList<>();
 
+        if (root == null) {
+            System.out.println("The tree is empty");
+            return 0;
+        }
+
         // Add the tree root to the queue
         qq.add(root);
 
