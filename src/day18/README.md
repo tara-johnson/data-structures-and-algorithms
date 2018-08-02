@@ -24,7 +24,4 @@ Output
 ```
 
 ## Solution
-![alt text](assets/find-maximum-value-binary-tree.jpg "breadth-first-traversal")
-
-##Contributors
-Tara Johnson
+![alt text](assets/find-maximum-value-binary-tree.jpg "find-maximum-value-binary-tree")
