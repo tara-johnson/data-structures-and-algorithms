@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e134c956-d5c7-48f2-bc92-a7eebfffe0c4" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace 2.xml___jb_tmp___" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace 2.xml___jb_tmp___" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/animalsheltertext.txt" beforeDir="false" afterPath="$PROJECT_DIR$/animalsheltertext.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day01/ArrayReverse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day01/ArrayReverse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day01/ArrayReverseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day01/ArrayReverseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day01/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/day01/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day02/ArrayShift.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day02/ArrayShift.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day02/ArrayShiftTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day02/ArrayShiftTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day02/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/day02/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day03/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day03/BinarySearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day03/BinarySearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day03/BinarySearchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day03/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/day03/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day04/ArrayAdjacentProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day04/ArrayAdjacentProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day04/ArrayAdjacentProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day04/ArrayAdjacentProductTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day04/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/day04/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day05/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/day05/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day05/RotateArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day05/RotateArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day05/RotateArrayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day05/RotateArrayTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day06/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day06/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day06/LinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day06/LinkedListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day06/ListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day06/ListNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day06/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day06/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day06/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/day06/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day07/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day07/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day07/LinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day07/LinkedListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day07/ListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day07/ListNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day07/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day07/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day07/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/day07/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day07/assets/ll_kth_from_end.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/day07/assets/ll_kth_from_end.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day07/kthElementFromEnd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day07/kthElementFromEnd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day08/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day08/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day08/LinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day08/LinkedListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day08/ListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day08/ListNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day08/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day08/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day08/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/day08/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day08/assets/ll_merge.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/day08/assets/ll_merge.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day09/DetectLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day09/DetectLoop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day09/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day09/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day09/LinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day09/LinkedListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day09/ListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day09/ListNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day09/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day09/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day09/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/day09/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day09/assets/ll_detect_loop.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/day09/assets/ll_detect_loop.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day10/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day10/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day10/LinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day10/LinkedListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day10/ListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day10/ListNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day10/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day10/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day10/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/day10/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day10/assets/ll_reverse.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/day10/assets/ll_reverse.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day11/QueueWithStacks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day11/QueueWithStacks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day11/QueueWithStacksTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day11/QueueWithStacksTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day11/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/day11/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day11/assets/queue_with_stacks.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/day11/assets/queue_with_stacks.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day11/assets/queue_with_stacks_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/day11/assets/queue_with_stacks_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day12/AnimalShelter.java___jb_tmp___" beforeDir="false" afterPath="$PROJECT_DIR$/src/day12/AnimalShelter.java___jb_tmp___" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day12/AnimalShelterTest.java___jb_tmp___" beforeDir="false" afterPath="$PROJECT_DIR$/src/day12/AnimalShelterTest.java___jb_tmp___" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day12/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day12/Cat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day12/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day12/Dog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day12/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day12/Pet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day12/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/day12/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day12/assets/fifo_animal_shelter.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/day12/assets/fifo_animal_shelter.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day13/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/day13/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day13/assets/multi_bracket_validation_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/day13/assets/multi_bracket_validation_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day13/assets/multi_bracket_validation_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/day13/assets/multi_bracket_validation_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day14/MaxStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day14/MaxStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day14/MaxStackTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day14/MaxStackTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day14/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/day14/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day14/assets/stack_max.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/day14/assets/stack_max.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day15/EeneyMeeney.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day15/EeneyMeeney.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day15/EeneyMeeneyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day15/EeneyMeeneyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day15/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/day15/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day15/assets/eeney_meeney.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/day15/assets/eeney_meeney.jpg" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="700023699">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/day16/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="10" column="51" lean-forward="true" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/day05/RotateArray.java" />
+        <option value="$PROJECT_DIR$/src/day05/RotateArrayTest.java" />
+        <option value="$PROJECT_DIR$/src/day02/ArrayShiftTest.java" />
+        <option value="$PROJECT_DIR$/src/day02/ArrayShift.java" />
+        <option value="$PROJECT_DIR$/src/day06/Insertion.java" />
+        <option value="$PROJECT_DIR$/src/day06/ListNode.java" />
+        <option value="$PROJECT_DIR$/src/day06/README.md" />
+        <option value="$PROJECT_DIR$/src/day06/Main.java" />
+        <option value="$PROJECT_DIR$/src/day07/ListNode.java" />
+        <option value="$PROJECT_DIR$/src/day07/kthElementFromEnd.java" />
+        <option value="$PROJECT_DIR$/src/day07/Main.java" />
+        <option value="$PROJECT_DIR$/src/day07/README.md" />
+        <option value="$PROJECT_DIR$/src/day08/ListNode.java" />
+        <option value="$PROJECT_DIR$/src/day08/Main.java" />
+        <option value="$PROJECT_DIR$/src/day08/LinkedListTest.java" />
+        <option value="$PROJECT_DIR$/src/day08/README.md" />
+        <option value="$PROJECT_DIR$/src/day07/LinkedList.java" />
+        <option value="$PROJECT_DIR$/src/day09/README.md" />
+        <option value="$PROJECT_DIR$/src/day07/LinkedListTest.java" />
+        <option value="$PROJECT_DIR$/src/day08/LinkedList.java" />
+        <option value="$PROJECT_DIR$/src/day09/ListNode.java" />
+        <option value="$PROJECT_DIR$/src/day09/DetectLoopTest.java" />
+        <option value="$PROJECT_DIR$/src/day09/DetectLoop.java" />
+        <option value="$PROJECT_DIR$/src/day09/Main.java" />
+        <option value="$PROJECT_DIR$/src/day09/LinkedListTest.java" />
+        <option value="$PROJECT_DIR$/src/day09/LinkedList.java" />
+        <option value="$PROJECT_DIR$/src/day10/Main.java" />
+        <option value="$PROJECT_DIR$/src/day10/ListNode.java" />
+        <option value="$PROJECT_DIR$/src/day10/LinkedList.java" />
+        <option value="$PROJECT_DIR$/src/day10/LinkedListTest.java" />
+        <option value="$PROJECT_DIR$/src/day10/README.md" />
+        <option value="$PROJECT_DIR$/src/day06/LinkedList.java" />
+        <option value="$PROJECT_DIR$/src/day06/LinkedListTest.java" />
+        <option value="$PROJECT_DIR$/src/day11/Main.java" />
+        <option value="$PROJECT_DIR$/src/day13/README.md" />
+        <option value="$PROJECT_DIR$/src/day14/MaxStack.java" />
+        <option value="$PROJECT_DIR$/src/day14/MaxStackTest.java" />
+        <option value="$PROJECT_DIR$/src/day14/README.md" />
+        <option value="$PROJECT_DIR$/src/day15/EeneyMeeneyTest.java" />
+        <option value="$PROJECT_DIR$/src/day15/README.md" />
+        <option value="$PROJECT_DIR$/src/day15/EeneyMeeney.java" />
+        <option value="$PROJECT_DIR$/src/day11/QueueWithStacks.java" />
+        <option value="$PROJECT_DIR$/src/day11/QueueWithStacksTest.java" />
+        <option value="$PROJECT_DIR$/src/day11/README.md" />
+        <option value="$PROJECT_DIR$/src/day12/README.md" />
+        <option value="$PROJECT_DIR$/src/day12/Pet.java" />
+        <option value="$PROJECT_DIR$/src/day12/Cat.java" />
+        <option value="$PROJECT_DIR$/src/day12/Dog.java" />
+        <option value="$PROJECT_DIR$/src/day12/AnimalShelterTest.java" />
+        <option value="$PROJECT_DIR$/src/day12/AnimalShelter.java" />
+        <option value="$PROJECT_DIR$/src/day16/README.md" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="data-structures-and-algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="data-structures-and-algorithms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="data-structures-and-algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="data-structures-and-algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="data-structures-and-algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="data-structures-and-algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="day16" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533270957237" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.AnimalShelterTest.dequeueDogNotFirstTest">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AnimalShelterTest.dequeueDogFirstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="data-structures-and-algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day12.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="day12" />
+      <option name="MAIN_CLASS_NAME" value="day12.AnimalShelterTest" />
+      <option name="METHOD_NAME" value="dequeueDogFirstTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AnimalShelterTest.dequeueDogNotFirstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="data-structures-and-algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day12.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="day12" />
+      <option name="MAIN_CLASS_NAME" value="day12.AnimalShelterTest" />
+      <option name="METHOD_NAME" value="dequeueDogNotFirstTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AnimalShelterTest.dequeueNotCatOrDogTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="data-structures-and-algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day12.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="day12" />
+      <option name="MAIN_CLASS_NAME" value="day12.AnimalShelterTest" />
+      <option name="METHOD_NAME" value="dequeueNotCatOrDogTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AnimalShelterTest.dequeueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="data-structures-and-algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day12.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="day12" />
+      <option name="MAIN_CLASS_NAME" value="day12.AnimalShelterTest" />
+      <option name="METHOD_NAME" value="dequeueTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AnimalShelterTest.enqueueAnimals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="data-structures-and-algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day12.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="day12" />
+      <option name="MAIN_CLASS_NAME" value="day12.AnimalShelterTest" />
+      <option name="METHOD_NAME" value="enqueueAnimals" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.AnimalShelterTest.enqueueAnimals" />
+      <item itemvalue="JUnit.AnimalShelterTest.dequeueTest" />
+      <item itemvalue="JUnit.AnimalShelterTest.dequeueNotCatOrDogTest" />
+      <item itemvalue="JUnit.AnimalShelterTest.dequeueDogFirstTest" />
+      <item itemvalue="JUnit.AnimalShelterTest.dequeueDogNotFirstTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AnimalShelterTest.dequeueDogNotFirstTest" />
+        <item itemvalue="JUnit.AnimalShelterTest.dequeueDogFirstTest" />
+        <item itemvalue="JUnit.AnimalShelterTest.dequeueNotCatOrDogTest" />
+        <item itemvalue="JUnit.AnimalShelterTest.dequeueTest" />
+        <item itemvalue="JUnit.AnimalShelterTest.enqueueAnimals" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e134c956-d5c7-48f2-bc92-a7eebfffe0c4" name="Default" comment="" />
+      <created>1531240422342</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1531240422342</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="74" y="0" width="698" height="680" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.754717" visible="true" weight="0.33800623" />
+      <window_info id="Structure" order="1" sideWeight="0.24528302" side_tool="true" weight="0.24356224" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32963988" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919093" weight="0.35027224" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39673913" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5008091" side_tool="true" weight="0.3404864" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32789856" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.31760436" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.754717" visible="true" weight="0.2007722" />
+      <window_info id="Structure" order="1" sideWeight="0.24528302" side_tool="true" weight="0.24356224" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32963988" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49919093" visible="true" weight="0.35027224" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39673913" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5008091" side_tool="true" weight="0.3404864" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32789856" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.31834534" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout-to-restore>
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.md" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+</project>

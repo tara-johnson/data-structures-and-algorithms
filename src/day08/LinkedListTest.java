@@ -2,6 +2,7 @@ package day08;
 
 import org.junit.jupiter.api.Test;
 
+import static day08.LinkedList.mergeLists;
 import static org.junit.jupiter.api.Assertions.*;
 
 class LinkedListTest {
@@ -9,6 +10,7 @@ class LinkedListTest {
     public LinkedList l1;
     public LinkedList l2;
     public LinkedList l5;
+    public LinkedList mixed;
 
     @org.junit.jupiter.api.BeforeEach
     void setUp() {
@@ -36,17 +38,17 @@ class LinkedListTest {
 
     @Test
     void toStringOneItemList() {
-        assertEquals("[12]", empty.toString());
+        assertEquals("[12]", l1.toString());
     }
 
     @Test
     void toStringTwoItemList() {
-        assertEquals("[12, 14]", empty.toString());
+        assertEquals("[12, 14]", l2.toString());
     }
 
     @Test
     void toStringFiveItemList() {
-        assertEquals("[12, 14, 19, 92, 45]", empty.toString());
+        assertEquals("[12, 14, 19, 92, 45]", l5.toString());
     }
 
     @Test
@@ -62,41 +64,87 @@ class LinkedListTest {
         System.out.println(l1);
     }
 
-//    @Test
-//    void insertBeforeDuplicates() {
-//        l1.insertBefore(12,2);
-//        assertEquals("[2, 12]", l1.toString());
-//    }
-
-//    @Test
-//    void insertAfter() {
-//    }
-
     @Test
     void kthOneItemList() {
-        assertEquals(12, l1.kthElementFromEnd(0).data);
+        assertEquals(12, l1.kthElementFromEnd(0));
     }
 
     @Test
     void kthTwoItemList() {
-        assertEquals(12, l2.kthElementFromEnd(1).data);
+        assertEquals(12, l2.kthElementFromEnd(1));
     }
 
     @Test
     void kthFiveItemList() {
-        assertEquals(14, l5.kthElementFromEnd(3).data);
+        assertEquals(14, l5.kthElementFromEnd(3));
+    }
+
+    // Add tests for:
+    // lists of strings, integers, and mixed types
+
+    @Test
+    void mergeTwoEmptyListTest() {
+        String result = "[]";
+        String expected = mergeLists(empty,empty).toString();
+
+        System.out.println("Result: " + result);
+        System.out.println("Expected: " + expected);
+
+        assertEquals(result, expected);
     }
 
     @Test
-    void mergeListsTest() {
-        System.out.println("Test cases to be added");
-        // Add tests for:
-        // One or both lists are empty
-        // ll1 is longer
-        // ll2 is longer
-        // lists are equal length
-        // lists of strings, integers, and mixed types
-        // both lists have only one node
-        // one list has only one node
+    void mergeOneEmptyListTest() {
+        String result = "[12, 14, 19, 92, 45]";
+        String expected = mergeLists(empty,l5).toString();
+
+        System.out.println("Result: " + result);
+        System.out.println("Expected: " + expected);
+
+        assertEquals(result, expected);
+    }
+
+    @Test
+    void mergeTwoListsOneNodeEachTest() {
+        String result = "[12, 12]";
+        String expected = mergeLists(l1,l1).toString();
+
+        System.out.println("Result: " + result);
+        System.out.println("Expected: " + expected);
+
+        assertEquals(result, expected);
+    }
+
+    @Test
+    void mergeList1LongerTest() {
+        String result = "[12, 12, 14, 14, 19, 92, 45]";
+        String expected = mergeLists(l5,l2).toString();
+
+        System.out.println("Result: " + result);
+        System.out.println("Expected: " + expected);
+
+        assertEquals(result, expected);
+    }
+
+    @Test
+    void mergeList2LongerTest() {
+        String result = "[12, 12, 14]";
+        String expected = mergeLists(l1,l2).toString();
+
+        System.out.println("Result: " + result);
+        System.out.println("Expected: " + expected);
+
+        assertEquals(result, expected);
+    }
+
+    @Test
+    void mergeOneEqualLengthTest() {
+        String result = "[12, 12, 14, 14, 19, 19, 92, 92, 45, 45]";
+        String expected = mergeLists(l5,l5).toString();
+
+        System.out.println("Result: " + result);
+        System.out.println("Expected: " + expected);
+
+        assertEquals(result, expected);
     }
 }
