@@ -104,21 +104,38 @@ public class LinkedList {
         return current.data;
     }
 
-    public ListNode kthElementFromEnd(int k) {
+    public int kthElementFromEnd(int k) {
         ListNode current = this.root;
+
         // Get the total of elements in the list
         int total = this.size();
+        System.out.println(total);
+
         // Declare newIndex that is the index from the front of the list
         int newIndex = (total - k) - 1;
+        System.out.println(newIndex);
+
         // Get the element of newIndex from the list
-        this.get(newIndex);
-        return current;
+        System.out.println(this.get(newIndex));
+        int kthElement = this.get(newIndex);
+
+        return kthElement;
     }
 
     public static LinkedList mergeLists(LinkedList ll1, LinkedList ll2) {
         LinkedList temp = new LinkedList();
         ListNode cur1 = ll1.root;
         ListNode cur2 = ll2.root;
+
+        if (ll1.isEmpty()) {
+            System.out.println(ll2);
+            return ll2;
+        }
+
+        if (ll2.isEmpty()) {
+            System.out.println(ll1);
+            return ll1;
+        }
 
         temp.root = new ListNode(cur1.data);
         temp.root.next = new ListNode(cur2.data);
@@ -144,6 +161,7 @@ public class LinkedList {
                 cur2 = cur2.next;
             }
         }
+        System.out.println("Merge: " + temp);
         return temp;
     }
 
