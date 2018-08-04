@@ -180,6 +180,7 @@ public class LinkedList {
     public static LinkedList reverse (LinkedList ll) {
         // Assigns first list item as root
         ListNode current = ll.root;
+
         // Set two ListNode variables initialized at null to keep track of where we are in the list
         ListNode future = null;
         ListNode previous = null;
