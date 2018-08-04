@@ -1,26 +1,44 @@
-#Find the Maximum Value in a Binary Tree
+#Determine if two Binary Trees have indentical structures
 
 ## Challenge
-Write a function which takes a Binary Tree as its only input. Return the maximum value stored in the tree. You can assume that the values stored in the Binary Tree will be numeric.
+Create a method that accepts a reference to a Binary Tree and returns true trees have an identical structure. You may assume each Binary Tree only stores integers and is not generic.
 
 Write at least three test assertions for each method that you define.
 
 Example:
 
-Input
+Input  
+t01 (empty tree)  
+t02 (empty tree)  
+
+t1  
 ```
-               2
-          /        \
-         7          5
-      /    \         \
-     2      6         9
-          /    \     /
-         5     11   4
+    8
+  /   \
+ 2     6
+```
+
+t2  
+```
+    8
+  /   \
+ 2     6
+```
+
+t3  
+```
+    8
+  /   \
+ 2     6
+      /
+     7
 ```
 
 Output
 ```
-11
+t01.isIdentical(t02) // (empty trees are identical to each other)
+t1.isIdentical(t2) // true
+t2.isIdentical(t3) // false
 ```
 
 ## Solution
