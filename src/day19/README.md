@@ -1,7 +1,7 @@
 #Determine if two Binary Trees have indentical structures
 
 ## Challenge
-Create a method that accepts a reference to a Binary Tree and returns true trees have an identical structure. You may assume each Binary Tree only stores integers and is not generic.
+Create a method that accepts a reference to a Binary Tree and returns true if the trees have an identical structure. You may assume each Binary Tree only stores integers and is not generic.
 
 Write at least three test assertions for each method that you define.
 
