@@ -166,6 +166,19 @@ public class BinaryTree {
             return isIdentical;
         }
 
+        while (!qq1.isEmpty() && !qq2.isEmpty()) {
+            TreeNode temp1 = qq1.poll();
+            System.out.println("temp1: " + temp1);
+
+            TreeNode temp2 = qq2.poll();
+            System.out.println("temp2: " + temp2);
+
+            if (temp1 != temp2) {
+                isIdentical = false;
+                return isIdentical;
+            }
+        }
+
         return isIdentical;
     }
 }

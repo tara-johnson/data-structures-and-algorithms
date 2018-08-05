@@ -20,6 +20,32 @@ class IsIdenticalTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    void isIdenticalOneEmptyTreeTest() {
+        // Construct first tree
+        BinaryTree tree1 = new BinaryTree();
+        TreeNode n1 = new TreeNode(8);
+
+        TreeNode n2 = new TreeNode(7);
+
+        TreeNode n3 = new TreeNode(2);
+
+        // Connect nodes
+        tree1.root = n1;
+
+        n1.left = n2;
+
+        n1.right = n3;
+
+        // Construct second tree
+        BinaryTree tree2 = new BinaryTree();
+
+        Boolean expected = false;
+        Boolean actual = tree1.isIdentical(tree2);
+
+        assertEquals(expected, actual);
+    }
+
 //    @Test
 //    void isIdenticalTreeTest() {
 //        // Construct first tree
