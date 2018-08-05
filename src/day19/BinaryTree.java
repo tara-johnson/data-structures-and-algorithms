@@ -145,7 +145,7 @@ public class BinaryTree {
         return compareTrees(root, input.root);
     }
 
-    public static boolean compareTrees(TreeNode root1, TreeNode root2) {
+    public boolean compareTrees(TreeNode root1, TreeNode root2) {
         // Create queues to hold the tree nodes
         Queue<TreeNode> qq1 = new LinkedList<>();
         Queue<TreeNode> qq2 = new LinkedList<>();
@@ -157,28 +157,57 @@ public class BinaryTree {
         System.out.println("qq1: " + qq1);
         System.out.println("qq2: " + qq2);
 
-        // Declare isIdentical variable, instantiated as true
-        boolean isIdentical = true;
-
         // If both queues are empty return true (they match)
-        if (qq1 == null && qq2 == null) {
+        if (qq1.peek() == null && qq2.peek() == null) {
             System.out.println("The tree is empty");
-            return isIdentical;
+            System.out.println("Queues empty returns true");
+            return true;
         }
 
+        // If the queues are not empty
+        // Poll the queues and save the nodes into variables
+        // temp1 (for qq1) and temp2 (for qq2)
         while (!qq1.isEmpty() && !qq2.isEmpty()) {
             TreeNode temp1 = qq1.poll();
+
             System.out.println("temp1: " + temp1);
 
             TreeNode temp2 = qq2.poll();
             System.out.println("temp2: " + temp2);
 
-            if (temp1 != temp2) {
-                isIdentical = false;
-                return isIdentical;
+            // If either temp1 or temp2 is null while the other isn't, return false (the trees don't match)
+            if ((temp1 == null && temp2 != null) || (temp1 != null && temp2 == null)) {
+                return false;
+            }
+
+            // If values of temp1 and temp2 don't match, return false (the trees don't match)
+            if (temp1.data != temp2.data) {
+                System.out.println("temp1 in temp compare: " + temp1);
+                System.out.println("temp2 in temp compare: " + temp2);
+                return false;
+            }
+
+            // Add each trees children to their respective queues
+            if (temp1.left != null) {
+                qq1.add(temp1.left);
+                System.out.println("qq1 after temp.left added: " + qq1);
+            }
+
+            if (temp1.right != null) {
+                qq1.add(temp1.right);
+                System.out.println("qq1 after temp.right added: " + qq1);
+            }
+
+            if (temp2.left != null) {
+                qq2.add(temp2.left);
+                System.out.println("qq2 after temp.left added: " + qq2);
+            }
+
+            if (temp2.right != null) {
+                qq2.add(temp2.right);
+                System.out.println("qq2 after temp.right added: " + qq2);
             }
         }
-
-        return isIdentical;
+        return true;
     }
 }
