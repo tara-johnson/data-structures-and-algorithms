@@ -1,7 +1,5 @@
 package day20;
 
-import day19.TreeNode;
-
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -143,6 +141,7 @@ public class BinaryTree {
         return wasOnLeft || wasOnRight;
     }
 
+    // Public method that returns true or false if the compared trees are identical
     public boolean isIdentical(BinaryTree input) {
         return compareTrees(root, input.root);
     }
@@ -211,5 +210,30 @@ public class BinaryTree {
             }
         }
         return true;
+    }
+
+    // Public method that traverses the tree and swaps it's left and right nodes
+    public void flip() {
+        flip(this.root);
+    }
+
+    private static TreeNode flip(TreeNode node) {
+        if (node == null) {
+            System.out.println("The tree is empty");
+        }
+
+        TreeNode temp = node.left;
+        node.left = node.right;
+        node.right = temp;
+
+        if (node.left != null) {
+            flip(node.left);
+        }
+
+        if (node.right != null) {
+            flip(node.right);
+        }
+
+        return node;
     }
 }
