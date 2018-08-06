@@ -1,8 +1,8 @@
 #Flip a Binary Tree
-Flip a Binary Tree so it's left and right nodes are swapped
+Flip a Binary Tree so it's left and right nodes are swapped.
 
 ## Challenge
-Create a method that traverses through a binary tree and swaps each right and left value.
+Create a method that traverses through a binary tree and swaps each left and right value.
 
 Write at least three test assertions for each method that you define.
 
