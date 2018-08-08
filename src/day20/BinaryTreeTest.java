@@ -11,8 +11,9 @@ class BinaryTreeTest {
         // Construct first tree
         BinaryTree tree1 = new BinaryTree();
 
-        System.out.println("Tree1 root: " + tree1.root);
+        System.out.println("Tree1 root before flip: " + tree1.root);
         tree1.flip();
+        System.out.println("Tree1 root after flip: " + tree1.root);
 
         boolean isNull = tree1.root == null;
         assertTrue(isNull);
