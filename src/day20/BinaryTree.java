@@ -219,7 +219,7 @@ public class BinaryTree {
 
     private static TreeNode flip(TreeNode node) {
         if (node == null) {
-            System.out.println("The tree is empty");
+            return null;
         }
 
         TreeNode temp = node.left;
