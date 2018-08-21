@@ -10,6 +10,7 @@ public class RepeatedWord {
 
         HashMap<String, Integer> storyHash = new HashMap<>();
 
+        // Convert string to lowercase to account for capitalized words
         // Split the string at all non-word characters and digits
         // Add greedy quantifier to remove extra spaces
         String[] eachWord = string.toLowerCase().split("[\\W\\d]+");
