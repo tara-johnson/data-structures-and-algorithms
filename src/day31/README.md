@@ -28,3 +28,7 @@ Output
 
 ## Solution
 ![alt text](assets/repeated_word.jpg "first_repeated_word")
+
+## Contributors
+Tara Johnson  
+Nick DiPietro
