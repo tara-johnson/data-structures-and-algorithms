@@ -37,3 +37,9 @@ Output
 
 ## Solution
 ![alt text](assets/tree-intersection.jpg "tree-intersection")
+
+## Contributors
+Kat Cosgrove
+Brandon Fenty
+Tara Johnson
+Nick Di Pietro
