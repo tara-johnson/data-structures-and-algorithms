@@ -139,6 +139,71 @@ class TreeIntersectionTest {
     }
 
     @Test
+    void unorderedDuplicatesTest() {
+        // Construct first tree
+        BinaryTree tree1 = new BinaryTree();
+        TreeNode n1 = new TreeNode(2);
+
+        TreeNode n2 = new TreeNode(7);
+        TreeNode n3 = new TreeNode(2);
+        TreeNode n4 = new TreeNode(6);
+        TreeNode n5 = new TreeNode(5);
+        TreeNode n6 = new TreeNode(11);
+
+        TreeNode n7 = new TreeNode(5);
+        TreeNode n8 = new TreeNode(9);
+        TreeNode n9 = new TreeNode(18);
+
+        // Connect nodes
+        tree1.root = n1;
+
+        n1.left = n2;
+        n2.left = n3;
+        n2.right = n4;
+        n4.left = n5;
+        n4.right = n6;
+
+        n1.right = n7;
+        n7.right = n8;
+        n8.left = n9;
+
+        // Construct second tree
+        BinaryTree tree2 = new BinaryTree();
+        n1 = new TreeNode(7);
+
+        n2 = new TreeNode(9);
+        n3 = new TreeNode(42);
+        n4 = new TreeNode(1);
+        n5 = new TreeNode(18);
+        n6 = new TreeNode(14);
+
+        n7 = new TreeNode(12);
+        n8 = new TreeNode(6);
+        n9 = new TreeNode(21);
+
+        // Connect nodes
+        tree2.root = n1;
+
+        n1.left = n2;
+        n2.left = n3;
+        n2.right = n4;
+        n4.left = n5;
+        n4.right = n6;
+
+        n1.right = n7;
+        n7.right = n8;
+        n8.left = n9;
+
+        String expected = "[18, 6, 7, 9]";
+        String result = TreeIntersection.treeIntersection(tree1.root, tree2.root).toString();
+
+        System.out.println("Expected: " + expected);
+        System.out.println("Result: " + result);
+
+        assertEquals(expected, result);
+    }
+
+    @Test
     void whiteboardInputTest() {
         // Construct first tree
         BinaryTree tree1 = new BinaryTree();
