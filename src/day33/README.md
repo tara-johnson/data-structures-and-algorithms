@@ -37,4 +37,4 @@ Brandon Fenty
 Tara Johnson  
 Tyler Pearson  
 Nick Di Pietro  
-Paul Suarez  
+Paul Suarez
