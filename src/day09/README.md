@@ -9,9 +9,11 @@ Write at least three test assertions for each method that you define.
 Example:
 
 Input: ```head -> [1] -> [3] -> [2] -> x```
+
 Output: ```False```
 
-Input: ```head -> [1] -> [7] -> [2] -> [3] -> [5] -> [7] -> [2] -> [3] -> [5] -> [7] -> [2] -> etc``` . 
+Input: ```head -> [1] -> [7] -> [2] -> [3] -> [5] -> [7] -> [2] -> [3] -> [5] -> [7] -> [2] -> etc```
+
 Output: ```True```
 
 ## Solution
