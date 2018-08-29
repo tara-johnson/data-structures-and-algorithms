@@ -1,5 +1,7 @@
 package day37;
 
+import java.util.Random;
+
 public class SelectionSort {
     // References:
     // https://www.geeksforgeeks.org/selection-sort/
@@ -34,5 +36,15 @@ public class SelectionSort {
             }
         }
         return true;
+    }
+
+    public static double[] randomN(int size) {
+        double[] randomArray = new double[size];
+
+        for (int i = 0; i < size; i++) {
+            Random random = new Random();
+            randomArray[i] = random.nextDouble() * 10000;
+        }
+        return randomArray;
     }
 }
