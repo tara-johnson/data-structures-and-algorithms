@@ -16,8 +16,10 @@ class SelectionSortTest {
 
         System.out.println(Arrays.toString(actual));
         System.out.println(Arrays.toString(expected));
-
         assertArrayEquals(expected, actual);
+
+        // Run sorted array through isSort method to confirm it's sorted
+        assertTrue(SelectionSort.isSorted(SelectionSort.selectionSort(inputArr)));
     }
 
     @Test
@@ -29,8 +31,10 @@ class SelectionSortTest {
 
         System.out.println(Arrays.toString(actual));
         System.out.println(Arrays.toString(expected));
-
         assertArrayEquals(expected, actual);
+
+        // Run sorted array through isSort method to confirm it's sorted
+        assertTrue(SelectionSort.isSorted(SelectionSort.selectionSort(inputArr)));
     }
 
     @Test
@@ -42,7 +46,12 @@ class SelectionSortTest {
 
         double[] expected = {1, 2.7, 3, 4, 5.2, 6, 7, 8.4};
 
+        System.out.println(Arrays.toString(actual));
+        System.out.println(Arrays.toString(expected));
         assertArrayEquals(expected, actual);
+
+        // Run sorted array through isSort method to confirm it's sorted
+        assertTrue(SelectionSort.isSorted(SelectionSort.selectionSort(inputArr)));
     }
 
     @Test
@@ -54,7 +63,9 @@ class SelectionSortTest {
 
         System.out.println(Arrays.toString(actual));
         System.out.println(Arrays.toString(expected));
-
         assertArrayEquals(expected, actual);
+
+        // Run sorted array through isSort method to confirm it's sorted
+        assertTrue(SelectionSort.isSorted(SelectionSort.selectionSort(inputArr)));
     }
 }

@@ -26,4 +26,13 @@ public class SelectionSort {
         }
         return inputArray;
     }
+
+    public static boolean isSorted(double[] inputArray) {
+        for (int i = 0; i < inputArray.length - 1; i ++) {
+            if (inputArray[i + 1] < inputArray[i]) {
+                return false;
+            }
+        }
+        return true;
+    }
 }
