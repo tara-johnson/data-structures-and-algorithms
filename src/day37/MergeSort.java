@@ -4,7 +4,7 @@ public class MergeSort {
     // Switched directions after class review
     // https://www.geeksforgeeks.org/merge-sort/
 
-    public static int[] sort(int[] inputArr, int left, int right){
+    public static double[] sort(double[] inputArr, int left, int right){
         if (left < right) {
             int middle = (left + right) / 2;
 
@@ -16,14 +16,14 @@ public class MergeSort {
         return inputArr;
     }
 
-    public static void merge(int inputArr[], int left, int middle, int right){
+    public static void merge(double inputArr[], int left, int middle, int right){
         // Find sizes of left and right arrays
         int leftSize = middle - left + 1;
         int rightSize = right - middle;
 
         // Create temp arrays
-        int[] leftArr = new int[leftSize];
-        int[] rightArr = new int[rightSize];
+        double[] leftArr = new double[leftSize];
+        double[] rightArr = new double[rightSize];
 
         // Copy data into respective temp arrays
         for (int i = 0; i < leftSize; i++) {

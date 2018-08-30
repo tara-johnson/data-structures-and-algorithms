@@ -1,6 +1,9 @@
 package day37;
 
+import java.util.Arrays;
 import java.util.Random;
+
+import static day37.MergeSort.sort;
 
 public class SelectionSort {
     // References:
@@ -55,5 +58,43 @@ public class SelectionSort {
             clone[i] = inputArray[i];
         }
         return clone;
+    }
+
+    public static String sortTime (int arraySize){
+        String notSorted = "did not sort the array.";
+
+        // Generate an array with the desired array size
+        double[] arrayOriginal = randomN(arraySize);
+
+        // Make a copy of the original array
+        double[] arrayCopy = copy(arrayOriginal);
+
+        // Time how long MergeSort takes
+        long arrayOriginalDelta = 0;
+        long arrayOriginalStart = System.currentTimeMillis();
+        sort(arrayOriginal, 0, arrayOriginal.length - 1);
+        if (isSorted(arrayOriginal)) {
+            arrayOriginalDelta = System.currentTimeMillis() - arrayOriginalStart;
+        } else {
+            return "mergeSort " + notSorted;
+        }
+
+        String mergeSortTime = "" + arrayOriginalDelta + " milliseconds to sort " + arraySize + " items ";
+
+        // Time how long SelectionSort takes
+        long arrayCopyDelta = 0;
+        long arrayCopyStart = System.currentTimeMillis();
+        selectionSort(arrayCopy);
+        if (isSorted(arrayCopy)) {
+            arrayCopyDelta = System.currentTimeMillis() - arrayCopyStart;
+        } else {
+            return "selectionSort " + notSorted;
+        }
+
+        String selectionSortTime = "" + arrayCopyDelta;
+
+        String results = "It took MergeSort " + mergeSortTime + "compared to " + selectionSortTime + " milliseconds for SelectionSort. ";
+
+        return results;
     }
 }

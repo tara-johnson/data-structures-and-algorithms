@@ -68,4 +68,19 @@ class SelectionSortTest {
         // Run sorted array through isSort method to confirm it's sorted
         assertTrue(SelectionSort.isSorted(SelectionSort.selectionSort(inputArr)));
     }
+
+    @Test
+    void sortTimeFor10k() {
+        System.out.println(SelectionSort.sortTime(10000));
+    }
+
+    @Test
+    void sortTimeFor100k() {
+        System.out.println(SelectionSort.sortTime(100000));
+    }
+
+    @Test
+    void sortTimeFor1m() {
+        System.out.println(SelectionSort.sortTime(1000000));
+    }
 }
