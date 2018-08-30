@@ -7,7 +7,7 @@ public class SelectionSort {
     // https://www.geeksforgeeks.org/selection-sort/
     // https://stackoverflow.com/questions/34023517/selection-sort-for-doubles-in-java/34023603
 
-    public static double[] selectionSort (double[] inputArray) {
+    public static double[] selectionSort (double[] inputArray){
 
         // Iterate through the array one by one
         for (int i = 0; i < inputArray.length - 1; i++) {
@@ -29,7 +29,7 @@ public class SelectionSort {
         return inputArray;
     }
 
-    public static boolean isSorted(double[] inputArray) {
+    public static boolean isSorted(double[] inputArray){
         for (int i = 0; i < inputArray.length - 1; i ++) {
             if (inputArray[i + 1] < inputArray[i]) {
                 return false;
@@ -38,7 +38,7 @@ public class SelectionSort {
         return true;
     }
 
-    public static double[] randomN(int size) {
+    public static double[] randomN(int size){
         double[] randomArray = new double[size];
 
         for (int i = 0; i < size; i++) {
@@ -46,5 +46,14 @@ public class SelectionSort {
             randomArray[i] = random.nextDouble() * 10000;
         }
         return randomArray;
+    }
+
+    public static double[] copy(double[] inputArray){
+        double[] clone = new double[inputArray.length];
+
+        for (int i = 0; i < inputArray.length; i++) {
+            clone[i] = inputArray[i];
+        }
+        return clone;
     }
 }
