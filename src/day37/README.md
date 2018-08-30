@@ -17,6 +17,6 @@ Results for sorting an array of 1,000,000 random doubles:
 MergeSort time =  242 milliseconds  
 SelectionSort time = 371283 milliseconds (6.18805 minutes)
 
-Results for sorting an array of 10,000,000 random doubles:  
-MergeSort time =  242 milliseconds  
-SelectionSort time = 371283 milliseconds (6.18805 minutes)
+Results for sorting an array of 2,000,000 random doubles:  
+MergeSort time =  473 milliseconds  
+SelectionSort time = 1574088 milliseconds (26.2348 minutes)

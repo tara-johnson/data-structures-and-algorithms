@@ -83,4 +83,9 @@ class SelectionSortTest {
     void sortTimeFor1m() {
         System.out.println(SelectionSort.sortTime(1000000));
     }
+
+    @Test
+    void sortTimeFor2m() {
+        System.out.println(SelectionSort.sortTime(2000000));
+    }
 }
